@@ -1,4 +1,5 @@
 System Zakupu Kursów Online
+
 Opis projektu
 Projekt realizuje proces zakupu kursów online za pomocą modelowania procesów biznesowych w Camunda BPM. Aplikacja umożliwia użytkownikom wybór kursu, przetwarzanie płatności, przypisanie dostępu do kursu oraz generowanie potwierdzenia zakupu.
 
