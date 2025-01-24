@@ -40,16 +40,33 @@ Procesy są w pełni zautomatyzowane i zintegrowane z bazą danych **PostgreSQL*
 
 ## **Struktura projektu**
 
+## **Struktura projektu**
+
 ### **Worker-y:**
-- `CourseSelectionWorker` – Obsługa wyboru kursu.
-- `ConfirmPayment` – Obsługa potwierdzania płatności.
-- `AssignCourseAccessWorker` – Przypisywanie kursów do użytkowników.
+1. **Panel Początkowy (`WelcomeWorker`)**
+2. **Rejestracja (`RegistrationWorker`)**
+3. **Sprawdzenie Poprawności Danych (`CheckUserDataWorker`)**
+4. **Logowanie (`LoginWorker`)**
+5. **Panel Wyboru Kursu (`CourseSelectionWorker`)**
+6. **Zniżka (`DiscountCalculationWorker`)**
+7. **Płatność (`PaymentWorker`)**
+8. **Potwierdzenie Płatności (`ConfirmPayment`)**
+9. **Przypisanie Dostępu do Kursu (`AssignCourseAccessWorker`)**
+10. **Platforma Zawierająca Kurs (`ModuleSelectionWorker`)**
+11. **Generowanie Certyfikatu (`GenerateCertificateWorker`)**
+
+---
 
 ### **Baza danych:**
 - Tabele:
-  - `user_courses` – Przechowuje dane o zakupionych kursach.
-  - `courses` – Przechowuje listę dostępnych kursów.
-  - `users` – Przechowuje dane użytkowników.
+  - `courses` – Przechowuje listę dostępnych kursów z ich nazwami i cenami.
+  - `users` – Przechowuje dane użytkowników, takie jak imię, nazwisko, e-mail.
+  - `user_courses` – Przechowuje dane o przypisanych kursach do użytkowników (np. status: `zakupiono`).
+  - `modules` – Przechowuje dane o modułach kursów.
+  - `user_modules` – Przechowuje dane o postępach użytkownika w poszczególnych modułach kursów.
+  - `certificates` – Przechowuje dane o wygenerowanych certyfikatach dla użytkowników.
+
+---
 
 ### **Modele BPMN i DMN:**
 - **BPMN:** Model procesu zakupowego.
