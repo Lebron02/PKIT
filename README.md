@@ -40,8 +40,6 @@ Procesy są w pełni zautomatyzowane i zintegrowane z bazą danych **PostgreSQL*
 
 ## **Struktura projektu**
 
-## **Struktura projektu**
-
 ### **Worker-y:**
 1. **Panel Początkowy (`WelcomeWorker`)**
 2. **Rejestracja (`RegistrationWorker`)**
