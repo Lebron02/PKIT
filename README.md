@@ -76,8 +76,8 @@ Procesy są w pełni zautomatyzowane i zintegrowane z bazą danych **PostgreSQL*
 
 ## **Wymagania**
 
-1. **JDK 11+**
-2. **Camunda Platform 8** lub **Camunda Platform 7**.
+1. **Java >= 17**
+2. **Camunda Platform 8**.
 3. **Maven** – Do budowania projektu.
 
 ---
