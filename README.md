@@ -1,4 +1,4 @@
-# ** Projekt Kursów IT**
+# **Projekt Kursów IT**
 
 ---
 
