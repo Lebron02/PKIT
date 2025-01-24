@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1rvooz2" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Web Modeler" exporterVersion="a764577" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
+  <decision id="decision-0ucblbo" name="Discount Table">
+    <decisionTable id="DecisionTable_1ajmi4b" hitPolicy="FIRST">
+      <input id="Input_1" label="Discount">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text>discount</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="Discount Value" typeRef="number" />
+      <rule id="DecisionRule_0fi1ozd">
+        <inputEntry id="UnaryTests_1coko53">
+          <text>"Student"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1loqhto">
+          <text>51</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1ts2pi6">
+        <inputEntry id="UnaryTests_0exk3zq">
+          <text>"Żołnierz"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0h4bwh2">
+          <text>78</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0dn6t7t">
+        <inputEntry id="UnaryTests_05t8bt7">
+          <text>"Brak"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0ve1thy">
+          <text>0</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="decision-0ucblbo">
+        <dc:Bounds height="80" width="180" x="160" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

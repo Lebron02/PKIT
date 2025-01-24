@@ -1,0 +1,3 @@
+pl\edu\anstar\ticket_purchase\controller\HealthCheckController.class
+pl\edu\anstar\ticket_purchase\controller\ProcessStartController.class
+pl\edu\anstar\ticket_purchase\worker\SeatAvailabilityWorker.class
