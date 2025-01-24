@@ -1,4 +1,4 @@
-# **System Zakupu Kursów Online**
+# ** Projekt Kursów IT**
 
 ---
 
